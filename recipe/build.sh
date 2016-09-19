@@ -21,6 +21,8 @@ do
 	    --enable-termcap \
 	    --enable-pc-files \
 	    --with-termlib \
+	    --with-terminfo-dirs="/etc/terminfo:/lib/terminfo:/usr/share/terminfo:$PREFIX/share/terminfo" \
+	    --with-default-terminfo-dir="/usr/share/terminfo" \
 	    $WIDEC_OPT
     make
     make install
