@@ -21,7 +21,7 @@ do
 	    --enable-termcap \
 	    --enable-pc-files \
 	    --with-termlib \
-	    --with-terminfo-dirs="/etc/terminfo:/lib/terminfo:/usr/share/terminfo" \
+	    --with-terminfo-dirs="/etc/terminfo:/lib/terminfo:/usr/share/terminfo:$PREFIX/share/terminfo" \
 	    --with-default-terminfo-dir="$PREFIX/share/terminfo" \
 	    $WIDEC_OPT
     make
